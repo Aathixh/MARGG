@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/registerstyles.css">
 </head>
 
 <body>
-    <h1>Login Page</h1>
+    <div class="content" style="margin-top: 15%">
+    <h1 style="margin: 5%">Login Page</h1>
+    <div class="container">
     <form action="/authenticate" method="post">
         @csrf
         @method('post')
@@ -17,10 +20,18 @@
             {!!implode('',$errors->all('<li>:message</li>'))!!}
         </ul>
         @endif
-        <input name="email" placeholder="Email" type="email">
-        <input name="password" placeholder="Password" type="password">
-        <button>Let`s go!</button>
+        <div class="input-group">
+            <input type="email" required class="input" name="email">
+            <label class="user-label">Email</label>
+        </div>
+        <div class="input-group">
+            <input type="password" required class="input" name="password">
+            <label class="user-label">Password</label>
+        </div>
+        <button class="input-group input" type="submit">Submit</button>
     </form>
+    </div>
+    </div>
 </body>
 
 </html>

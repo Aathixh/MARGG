@@ -10,8 +10,8 @@
 
 <body>
     <div class="content">
+        <h1>Sign Up</h1>
         <div class="container">
-    <h1>Sign Up</h1>
     <form action="{{route('home.register')}}" method="post">
         @csrf
         @method('post')
