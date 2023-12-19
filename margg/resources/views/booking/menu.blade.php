@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menustyles.css">
     <title>book Tickets</title>
 </head>
 
 <body>
-    <h1> book tickets</h1>
+    <div class="top-bar">
+    <h1> BOOK TICKETS</h1>
     <a href="/logout"><button>
             <div class="text">Logout</div>
         </button>
     </a>
-
+</div>
     <!-- here this /locate url is given to the book now button for the tym being... in real program it must redirect somewhere else like payment gateway.... -->
 
 
@@ -41,7 +43,7 @@
             <td>{{$data->Duration}}</td>
             <td>{{$data->Arrival_Time}}</td>
             <td>{{$data->Price}}</td>
-            <td><a href="/locate_new">
+            <td style="text-align: center;"><a href="/locate_new">
                     <button>
                         <div class="text">Book Now</div>
                     </button>
