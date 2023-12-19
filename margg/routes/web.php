@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AlertController;
 use App\Http\Controllers\ThingSpeakIntraController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -42,7 +43,8 @@ Route::get('/IntraLocate', [ThingSpeakIntraController::class, 'getDataFromThingS
 Route::get('/intraL', [ThingSpeakIntraController::class, 'getDataFromThingSpeak'])->middleware('auth');
 Route::view('/listBus', 'booking.Search');
 Route::get('/search', [BookingController::class, 'search']);
-
+Route::view('/alert', 'locate.alert');
+Route::post('/alertmsg', [AlertController::class, 'AlertMsg']);
 //admin
 Route::get('/adminregister', [AdminRegisterController::class, 'Adminreg'])->name('regpage');
 Route::post('/adminregister', [AdminRegisterController::class, 'AdminRegister'])->name('adminReg');
