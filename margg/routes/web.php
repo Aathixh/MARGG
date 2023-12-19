@@ -38,7 +38,8 @@ Route::get('/get-data-from-thingspeak', [ThingSpeakController::class, 'getDataFr
 Route::get('/book', [BookingController::class, 'index'])->middleware('auth');
 Route::view('/type', 'home.TypeSelection')->middleware('auth');
 
-Route::get('/IntraLocate', [ThingSpeakIntraController::class, 'getDataFromThingSpeak'])->middleware('auth');
+Route::get('/IntraLocate', [ThingSpeakIntraController::class, 'getDataFromThingSpeak']);
+Route::get('/intraL', [ThingSpeakIntraController::class, 'getDataFromThingSpeak'])->middleware('auth');
 
 //admin
 Route::get('/adminregister', [AdminRegisterController::class, 'Adminreg'])->name('regpage');
