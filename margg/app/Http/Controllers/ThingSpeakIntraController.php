@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Http;
 
-class ThingSpeakController extends Controller
+class ThingSpeakIntraController extends Controller
 {
     public function getDataFromThingSpeak()
     {
@@ -31,7 +31,7 @@ class ThingSpeakController extends Controller
 
         //dd($latitude ,$longitude);
 
-        return view('locate.location')->with(['latitude' => $latitude, 'longitude' => $longitude]);
+        return view('Intra.IntraView')->with(['latitude' => $latitude, 'longitude' => $longitude]);
 
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ThingSpeakIntraController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RegisterController;
@@ -34,6 +35,9 @@ Route::get('/logout', [LoginController::class, 'logout']);
 Route::get('/locate_new', [ThingSpeakController::class, 'getDataFromThingSpeak'])->middleware('auth');
 Route::get('/get-data-from-thingspeak', [ThingSpeakController::class, 'getDataFromThingSpeak']);
 Route::get('/book', [BookingController::class, 'index'])->middleware('auth');
+Route::view('/type', 'home.TypeSelection')->middleware('auth');
+
+Route::get('/IntraLocate', [ThingSpeakIntraController::class, 'getDataFromThingSpeak'])->middleware('auth');
 
 //admin
 Route::get('/adminregister', [AdminRegisterController::class, 'Adminreg'])->name('regpage');
@@ -41,3 +45,4 @@ Route::post('/adminregister', [AdminRegisterController::class, 'AdminRegister'])
 Route::get('/AdminSignin', [AdminLoginController::class, 'Adminlog'])->name('logpage');
 Route::post('/AdminAuth', [AdminLoginController::class, 'AdminAuthenticate'])->name('authLog');
 Route::view('/AdminDashboard', 'administrator.admin')->middleware('auth:admin');
+Route::get('/AdminLogout', [AdminLoginController::class, 'logout']);

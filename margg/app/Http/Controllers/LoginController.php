@@ -26,7 +26,7 @@ class LoginController extends Controller
         if (Auth::attempt(['email' => $email, 'password' => $password])) {
             $newuser = User::where('email', $email)->first();
             Auth::login($newuser);
-            return redirect('/book');
+            return redirect('/type');
         } else {
             return back()->withErrors(['Invalid credentials!']);
         }

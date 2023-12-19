@@ -32,4 +32,10 @@ class AdminLoginController extends Controller
             return back()->withErrors(['Invalid credentials!']);
         }
     }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/AdminSignin');
+    }
 }

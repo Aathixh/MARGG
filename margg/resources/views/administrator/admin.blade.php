@@ -9,6 +9,12 @@
 
 <body>
     <h1>Welcome to Admin page</h1>
+
+    <a href="/AdminLogout"><button>
+            <div class="text">Logout</div>
+        </button>
+    </a>
+
 </body>
 
 </html>
