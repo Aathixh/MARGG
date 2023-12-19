@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/menustyles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>book Tickets</title>
 </head>
 
 <body>
     <div class="top-bar">
-    <h1> BOOK TICKETS</h1>
-    <a href="/logout"><button>
-            <div class="text">Logout</div>
-        </button>
-    </a>
-</div>
+        <h1> BOOK TICKETS</h1>
+        <a href="/logout"><button>
+                <div class="text">Logout</div>
+            </button>
+        </a>
+    </div>
     <!-- here this /locate url is given to the book now button for the tym being... in real program it must redirect somewhere else like payment gateway.... -->
 
 
-    <table border="1" class="table">
+    <table border="1" class="table table-hover">
         <tr>
             <th>Sl.No</th>
             <th>Bus_No</th>
@@ -62,5 +63,8 @@
     </table>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
 </html>
