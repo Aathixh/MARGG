@@ -7,11 +7,9 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 table {
+    margin: auto;
     border-collapse: collapse;
-    width: 100%;
-}
-table > tr{
-    background-color: aqua;
+    width: 80%;
 }
 .top-bar{
     display: flex;
@@ -21,6 +19,8 @@ table > tr{
     border-radius: 1rem;
     margin-bottom: 2.5%;
     color: black;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 .top-bar > a{
     border: solid 1.5px #9e9e9e;
