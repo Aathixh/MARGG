@@ -4,23 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="css/homestyles.css">
     <title>MARGG</title>
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to Margg!</h1>
-    </header>
-    <a href="/login"><button>Register</button></a>
-    <a href="/signin"><button>Login</button></a>
-    <footer>
-        <h3>About</h3>
-        <p>"MARGG" is a startup idea focused on revolutionizing the way people track buses and enhance public
-            transportation systems. Here's a brief overview of what MARGG could offer:
+    <div class="content">
+        <header class="top-bar">
+            <nav><a href="#about">ABOUT</a></nav>
+        </header>
+        <div class="head">
+        <img src="img/black.png" alt="logo">
+        <div class="container">
+            <button onclick="window.location.href='/login'"><span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front text">Register
+                </span></button>
+            <button onclick="window.location.href='/signin'"><span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front text">Login
+                </span></span></button>
+        </div>
+        </div>
+        <footer id="about">
+            <h3>ABOUT</h3>
+            <hr>
+            <p>"MARGG" is a startup idea focused on revolutionizing the way people track buses and enhance public
+                transportation systems. Here's a brief overview of what MARGG could offer:
 
-            Concept: MARGG is a comprehensive bus tracking and management system designed to provide real-time
-            information to both passengers and transportation authorities.</p>
-    </footer>
+                Concept: MARGG is a comprehensive bus tracking and management system designed to provide real-time
+                information to both passengers and transportation authorities.</p>
+        </footer>
+    </div>
 </body>
 
 </html>

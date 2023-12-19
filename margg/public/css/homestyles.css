@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.top-bar {
+    justify-content: space-between;
+    background-color: #3333339a;
+    color: aliceblue;
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar > h1 {
+    margin: 0 auto;
+}
+.top-bar > nav > a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.top-bar > h1 {
+    display: inline-block;
+}
+.content {
+
+    background-image: url('https://images.wallpaperscraft.com/image/single/mountains_mountain_range_peaks_149574_1280x720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: aliceblue;
+    text-align: center;
+}
+.head{
+    margin: auto;
+    padding: auto;
+}
+img{
+    margin-top: 10%;
+    width: 100vw;
+    height: auto;
+    max-width: 40%;
+}
+.container{
+    margin-top: 7%;
+}
+.content > img{
+    margin-top: 5em;
+}
+  footer{
+    margin-top: 15em;
+    background-color: hsla(0, 0%, 20%, 0.21);
+  }
+  footer > p{
+    text-align: center;
+    padding: 1em;
+  }
+  footer > h3{
+    text-align: center;
+    padding: 1em;
+  } 
+  button {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    touch-action: manipulation;
+   }
+   
+   .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+   }
+   
+   .edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(
+       to left,
+       hsl(0, 0%, 0%) 0%,
+       hsl(0, 0%, 18%) 8%,
+       hsl(0, 0%, 0%) 92%,
+       hsl(0, 0%, 14%) 100%
+     );
+   }
+   
+   .front {
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background: hsl(348, 100%, 1%);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+   }
+   
+   button:hover {
+    filter: brightness(110%);
+   }
+   
+   button:hover .front {
+    transform: translateY(-6px);
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+   }
+   
+   button:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+   }
+   
+   button:hover .shadow {
+    transform: translateY(4px);
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+   }
+   
+   button:active .shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+   }
+   
+   button:focus:not(:focus-visible) {
+    outline: none;
+   }

@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="css/registerstyles.css">
 </head>
 
 <body>
-    <h1>test</h1>
+    <div class="content">
+        <div class="container">
+    <h1>Sign Up</h1>
     <form action="{{route('home.register')}}" method="post">
         @csrf
         @method('post')
@@ -19,13 +22,30 @@
             @endforeach
         </ul>
         @endif
-        <input type="text" required placeholder="Name" name="name">
-        <input type="email" required placeholder="Email" name="email">
-        <input type="number" required placeholder="Phone Number" name="phn_num">
-        <input type="password" required placeholder="Password" name="password">
-        <input type="password" required placeholder="Re-enter Password" name="password_confirmation">
-        <button type="submit">Submit</button>
+        <div class="input-group">
+            <input type="text" required class="input" name="name">
+            <label class="user-label">Name</label>
+        </div>
+        <div class="input-group">
+            <input type="email" required class="input" name="email">
+            <label class="user-label">Email</label>
+        </div>
+            <div class="input-group">
+            <input type="tel" required class="input" step="1" min="0" name="phn_num">
+            <label class="user-label">Phone Number</label>
+        </div>
+        <div class="input-group">
+            <input type="password" required class="input" name="password">
+            <label class="user-label">Password</label>
+        </div>
+        <div class="input-group">
+            <input type="password" required class="input" name="password_confirmation">
+            <label class="user-label">Re-Enter Password</label>
+        </div>
+        
+        <button class="input-group input" type="submit">Submit</button>
     </form>
+</div>
+    </div>
 </body>
-
 </html>
