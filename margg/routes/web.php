@@ -40,6 +40,8 @@ Route::view('/type', 'home.TypeSelection')->middleware('auth');
 
 Route::get('/IntraLocate', [ThingSpeakIntraController::class, 'getDataFromThingSpeak']);
 Route::get('/intraL', [ThingSpeakIntraController::class, 'getDataFromThingSpeak'])->middleware('auth');
+Route::view('/listBus', 'booking.Search');
+Route::get('/search', [BookingController::class, 'search']);
 
 //admin
 Route::get('/adminregister', [AdminRegisterController::class, 'Adminreg'])->name('regpage');

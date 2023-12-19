@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <a href="/book"><button>Inter</button></a>
+    <a href="/listBus"><button>Inter</button></a>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum earum cumque esse deleniti porro facilis, repellat
         laboriosam exercitationem sed! Reprehenderit ducimus laudantium quisquam quaerat ab optio quasi, qui sint in.
     </p>
