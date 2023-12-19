@@ -4,22 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
+    <title>Sign Up</title>
 </head>
 
 <body>
-    <h1>Login Page</h1>
-    <form action="/authenticate" method="post">
+    <h1>test</h1>
+    <form action="{{route('home.register')}}" method="post">
         @csrf
         @method('post')
-        @if($errors->any())
-        <ul>
-            {!!implode('',$errors->all('<li>:message</li>'))!!}
+        @if ($errors->any())
+        <ul style="color: red;">
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
         </ul>
         @endif
-        <input name="email" placeholder="Email" type="email">
-        <input name="password" placeholder="Password" type="password">
-        <button>Let`s go!</button>
+        <input type="text" required placeholder="Name" name="name">
+        <input type="email" required placeholder="Email" name="email">
+        <input type="number" required placeholder="Phone Number" name="phn_num">
+        <input type="password" required placeholder="Password" name="password">
+        <input type="password" required placeholder="Re-enter Password" name="password_confirmation">
+        <button type="submit">Submit</button>
     </form>
 </body>
 
