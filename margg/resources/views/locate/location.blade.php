@@ -32,6 +32,11 @@
     @endif -->
 
     <script src="{{ asset('js/map.js') }}"></script>
+
+    <form action="/alert" method="get">
+        <button type="submit">Give an Alert !!</button>
+    </form>
+
 </body>
 
 </html>
