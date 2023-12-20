@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Alert;
+use App\Models\Alerts;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -22,12 +22,11 @@ class AlertController extends Controller
         // Check if the user is authenticated
         if ($user) {
             // Create a new alert record with user's name, current date, and messages
-            $newAlert = Alert::create([
-                'name' => $user->name,
-                'date' => now(), // Automatically set the current date and time
+            $newAlert = Alerts::create([
+                'name' => $user->name, // Automatically set the current date and time
                 'messages' => $request->input('messages'),
             ]);
-            return redirect()->back()->with('success', 'Alert registered successfully!');
+            return redirect('/alert')->with('success', 'Alert registered successfully!');
         } else {
             // Redirect back with an error message or perform any other actions
             return redirect()->back()->with('error', 'User not authenticated.');

@@ -14,6 +14,12 @@
         <input type="text" name="messages">
         <button type="submit">Submit</button>
     </form>
+
+    @if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+    @endif
 </body>
 
 </html>

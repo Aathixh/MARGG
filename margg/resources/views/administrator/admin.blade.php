@@ -15,6 +15,24 @@
         </button>
     </a>
 
+    <table border=1>
+        <tr>
+            <th>Sl.No</th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Alert Message</th>
+        </tr>
+        @foreach($AlertMsg as $key => $data)
+        <tr>
+            <td>{{$key+1}}</td>
+            <td>{{$data->Name}}</td>
+            <td>{{$data->created_at}}</td>
+            <td>{{$data->Message}}</td>
+        </tr>
+        @endforeach
+    </table>
+
+
 </body>
 
 </html>

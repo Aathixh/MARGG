@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminAlertController;
 use App\Http\Controllers\AlertController;
 use App\Http\Controllers\ThingSpeakIntraController;
 use Illuminate\Support\Facades\Route;
@@ -43,8 +44,15 @@ Route::get('/IntraLocate', [ThingSpeakIntraController::class, 'getDataFromThingS
 Route::get('/intraL', [ThingSpeakIntraController::class, 'getDataFromThingSpeak'])->middleware('auth');
 Route::view('/listBus', 'booking.Search');
 Route::get('/search', [BookingController::class, 'search']);
-Route::view('/alert', 'locate.alert');
-Route::post('/alertmsg', [AlertController::class, 'AlertMsg']);
+
+Route::group(['middleware' => 'web'], function () {
+    Route::get('/alert', function () {
+        return view('locate.alert');
+    });
+    Route::post('/alertmsg', [AlertController::class, 'AlertMsg']);
+});
+
+
 //admin
 Route::get('/adminregister', [AdminRegisterController::class, 'Adminreg'])->name('regpage');
 Route::post('/adminregister', [AdminRegisterController::class, 'AdminRegister'])->name('adminReg');
@@ -52,3 +60,6 @@ Route::get('/AdminSignin', [AdminLoginController::class, 'Adminlog'])->name('log
 Route::post('/AdminAuth', [AdminLoginController::class, 'AdminAuthenticate'])->name('authLog');
 Route::view('/AdminDashboard', 'administrator.admin')->middleware('auth:admin');
 Route::get('/AdminLogout', [AdminLoginController::class, 'logout']);
+
+Route::get('/AlertView', [AdminAlertController::class, 'index']);
+

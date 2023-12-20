@@ -34,6 +34,7 @@
     <script src="{{ asset('js/map.js') }}"></script>
 
     <form action="/alert" method="get">
+        @csrf
         <button type="submit">Give an Alert !!</button>
     </form>
 

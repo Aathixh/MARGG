@@ -10,10 +10,9 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('alert_messages', function (Blueprint $table) {
+        Schema::create('alerts', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->date('date');
             $table->string('messages');
             $table->timestamps();
         });
