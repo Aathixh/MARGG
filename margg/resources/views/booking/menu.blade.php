@@ -18,8 +18,8 @@
     </a>
 </div>
     <!-- here this /locate url is given to the book now button for the tym being... in real program it must redirect somewhere else like payment gateway.... -->
-
-    <table border="1" class="table">
+    <div class="content">
+    <table border="0" class="table">
         <tr>
             <th>Sl.No</th>
             <th>Bus_No</th>
@@ -60,7 +60,7 @@
         @endforeach
         
     </table>
-
+    </div>
 </body>
 
 </html>

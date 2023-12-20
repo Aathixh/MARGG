@@ -30,9 +30,9 @@
             <h3>ABOUT</h3>
             <hr>
             <p>"MARGG" is a startup idea focused on revolutionizing the way people track buses and enhance public
-                transportation systems. Here's a brief overview of what MARGG could offer:
+                transportation systems. <br>Here's a brief overview of what MARGG could offer:
 
-                Concept: MARGG is a comprehensive bus tracking and management system designed to provide real-time
+                <br>Concept: MARGG is a comprehensive bus tracking and management system designed to provide real-time
                 information to both passengers and transportation authorities.</p>
         </footer>
     </div>

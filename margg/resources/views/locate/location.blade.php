@@ -18,26 +18,18 @@
 
 <body>
     <div id="map" data-latitude="{{ $latitude }}" data-longitude="{{ $longitude }}"></div>
-
-    <!-- <script>
-        var latitude = {{ $latitude ?? 0 }};
-        var longitude = {{ $longitude ?? 0 }};
-    </script> -->
-    <!-- @if ($errors->any())
-    <ul style="color: red;">
-        @foreach ($errors->all() as $error)
-        <li>{{ $error }}</li>
-        @endforeach
-    </ul>
-    @endif -->
-
     <script src="{{ asset('js/map.js') }}"></script>
-
+    <div class="container content">
     <form action="/alert" method="get">
         @csrf
-        <button type="submit">Give an Alert !!</button>
+        <button type="submit">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text">GIve An Alert
+            </span>
+          </button>
     </form>
-
+    </div>
 </body>
 
 </html>

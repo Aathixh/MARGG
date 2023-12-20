@@ -1,5 +1,4 @@
 * {
-    margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 .top-bar {
@@ -24,7 +23,7 @@
     display: inline-block;
 }
 html {
-    width: 100vw;
+    width: 98.9vw;
     height: 100vh;
     background-image: url('https://images.wallpaperscraft.com/image/single/mountains_mountain_range_peaks_149574_1280x720.jpg');
     background-repeat: no-repeat;
@@ -52,12 +51,23 @@ img{
 .content > img{
     margin-top: 5em;
 }
-  footer{
-    margin-top: 15em;
-    background-color: hsla(0, 0%, 20%, 0.21);
-  }
+html {
+    width: 98.9vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1;
+}
+
+footer {
+    background-color: hsla(0, 0%, 0%, 0.7);
+    margin-top: 5%;
+}
   footer > p{
-    text-align: center;
+    text-align: left;
     padding: 1em;
   }
   footer > h3{

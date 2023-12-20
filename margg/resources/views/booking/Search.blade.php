@@ -12,13 +12,13 @@
     <div class="container">
     <form action="/search" method="GET">
         <div class="routing">
+            <div class="input-group">
+                <input type="text" autocomplete="off" required class="input" name="from">
+                <label class="user-label">From</label>
+            </div>
         <div class="input-group">
             <input type="text" autocomplete="off" required class="input" name="to">
             <label class="user-label">To</label>
-        </div>
-        <div class="input-group">
-            <input type="text" autocomplete="off" required class="input" name="from">
-            <label class="user-label">From</label>
         </div>
     </div>
     <div style="flex: 3">

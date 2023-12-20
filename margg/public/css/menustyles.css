@@ -9,14 +9,21 @@ html {
 }
 table {
     margin: auto;
+    background-color: #21212161;
+    border-radius: 1rem;
     border-collapse: collapse;
-    width: 80%;
+    width: 90%;
+}
+table td, table th {
+    border: none;
+    color: white;
+    text-align: center;
 }
 .top-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #8a8a8a61;
+    background-color: #21212161;
     border-radius: 1rem;
     margin-bottom: 2.5%;
     color: black;
@@ -41,4 +48,18 @@ table {
     font-family: inherit;
     color: inherit;
     cursor: pointer;
+}
+th{
+    padding: 1rem;
+    text-decoration: solid;
+    color: #000;;
+}
+.content{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
+    min-width: fit-content
+}
+td{
+    padding: 0.5rem;
 }
