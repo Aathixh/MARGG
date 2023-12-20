@@ -16,9 +16,7 @@
         @csrf
         @method('post')
         @if($errors->any())
-        <ul>
-            {!!implode('',$errors->all('<li>:message</li>'))!!}
-        </ul>
+            {!!implode('',$errors->all(':message'))!!}
         @endif
         <div class="input-group">
             <input type="email" required class="input" name="email">

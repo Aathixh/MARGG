@@ -8,12 +8,12 @@
 </head>
 
 <body>
-    <a href="/listBus"><button>Inter</button></a>
+    <a href="/listBus"><button>Click here for long distance travel</button></a>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum earum cumque esse deleniti porro facilis, repellat
         laboriosam exercitationem sed! Reprehenderit ducimus laudantium quisquam quaerat ab optio quasi, qui sint in.
     </p>
     <br>
-    <a href="/IntraLocate"><button>Intra</button></a>
+    <a href="/IntraLocate"><button>Click here to see buses near you</button></a>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consectetur amet impedit ratione saepe aspernatur
         accusantium, quidem quod soluta mollitia temporibus expedita explicabo numquam alias, earum pariatur, illo a
         nobis?
