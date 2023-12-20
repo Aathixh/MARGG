@@ -20,16 +20,21 @@
     <div id="map" data-latitude="{{ $latitude }}" data-longitude="{{ $longitude }}"></div>
     <script src="{{ asset('js/map.js') }}"></script>
     <div class="container content">
-    <form action="/alert" method="get">
-        @csrf
-        <button type="submit">
-            <span class="shadow"></span>
-            <span class="edge"></span>
-            <span class="front text">GIve An Alert
-            </span>
-          </button>
-    </form>
+        <form action="/alert" method="get">
+            @csrf
+            <button type="submit">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front text">GIve An Alert
+                </span>
+            </button>
+        </form>
     </div>
+    <footer style="margin-top:10%; text-align:center">
+        <h1>Medical Helpline</h1>
+        Vajra Hospital :- <strong>09542443145</strong><br>
+        Apex Hospital :- <strong>08897811811</strong>
+    </footer>
 </body>
 
 </html>
